@@ -1,0 +1,1 @@
+This folder contains image assets for the AURA-Travels project.
