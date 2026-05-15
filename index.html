@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AURA Travels — Curated Luxury Journeys</title>
+<meta name="description" content="AURA Travels designs bespoke luxury journeys across the world's most extraordinary destinations." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="brand">
+      <span class="brand__mark">A</span>
+      <span class="brand__name">AURA<small>travels</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#destinations" class="nav__link">Destinations</a>
+      <a href="#why" class="nav__link">Why Us</a>
+      <a href="#featured" class="nav__link">Packages</a>
+      <a href="#testimonials" class="nav__link">Stories</a>
+      <a href="#gallery" class="nav__link">Gallery</a>
+      <a href="#faq" class="nav__link">FAQ</a>
+      <a href="#book" class="nav__link nav__link--cta">Book Now</a>
+    </nav>
+    <div class="nav__tools">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg" style="background-image:url('./img/hero.jpg')"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__content">
+    <span class="eyebrow reveal">Curated Luxury Journeys</span>
+    <h1 class="hero__title reveal">
+      <span class="word">Travel</span>
+      <span class="word">beyond</span>
+      <span class="word"><em>the ordinary.</em></span>
+    </h1>
+    <p class="hero__sub reveal">Tailor-made expeditions to the world's most breathtaking corners — designed in detail, lived in full.</p>
+    <div class="hero__cta reveal">
+      <a href="#destinations" class="btn btn--primary">Explore Destinations</a>
+      <a href="#book" class="btn btn--ghost">Plan Your Trip</a>
+    </div>
+    <div class="hero__meta reveal">
+      <div><strong>120+</strong><span>Destinations</span></div>
+      <div><strong>15K</strong><span>Happy Travelers</span></div>
+      <div><strong>4.9★</strong><span>Avg. Rating</span></div>
+    </div>
+  </div>
+  <div class="hero__scroll">scroll<span></span></div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section" id="destinations">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Destinations</span>
+      <h2 class="section__title">Where will <em>you</em> wander?</h2>
+      <p class="section__lead">From hidden coastlines to alpine retreats — handpicked escapes for the discerning traveler.</p>
+    </div>
+
+    <div class="filters reveal" id="filters">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="beach">Beach</button>
+      <button class="chip" data-filter="mountains">Mountains</button>
+      <button class="chip" data-filter="city">City</button>
+      <button class="chip" data-filter="adventure">Adventure</button>
+    </div>
+
+    <div class="grid grid--3" id="destinationGrid">
+      <article class="dest reveal" data-cat="beach">
+        <div class="dest__img" style="background-image:url('./img/d1.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Santorini</h3><span class="tag">Greece</span></div>
+          <p>Whitewashed villages cascading over the caldera at golden hour.</p>
+          <div class="dest__foot"><span class="price">from <strong>$2,490</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+      <article class="dest reveal" data-cat="mountains">
+        <div class="dest__img" style="background-image:url('./img/d2.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Swiss Alps</h3><span class="tag">Switzerland</span></div>
+          <p>Chalet retreats, glacier panoramas and crisp alpine mornings.</p>
+          <div class="dest__foot"><span class="price">from <strong>$3,180</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+      <article class="dest reveal" data-cat="city">
+        <div class="dest__img" style="background-image:url('./img/d3.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Tokyo</h3><span class="tag">Japan</span></div>
+          <p>Neon-lit nights, hidden omakase counters and ancient quiet gardens.</p>
+          <div class="dest__foot"><span class="price">from <strong>$2,860</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+      <article class="dest reveal" data-cat="beach">
+        <div class="dest__img" style="background-image:url('./img/d4.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Bali</h3><span class="tag">Indonesia</span></div>
+          <p>Cliffside villas, jungle spas and surf at first light.</p>
+          <div class="dest__foot"><span class="price">from <strong>$1,790</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+      <article class="dest reveal" data-cat="adventure">
+        <div class="dest__img" style="background-image:url('./img/d5.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Patagonia</h3><span class="tag">Chile</span></div>
+          <p>Expedition lodges at the edge of the wildest landscape on earth.</p>
+          <div class="dest__foot"><span class="price">from <strong>$3,940</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+      <article class="dest reveal" data-cat="city">
+        <div class="dest__img" style="background-image:url('./img/d6.jpg')"></div>
+        <div class="dest__body">
+          <div class="dest__top"><h3>Paris</h3><span class="tag">France</span></div>
+          <p>Suites with skyline views, private museum hours and Michelin tables.</p>
+          <div class="dest__foot"><span class="price">from <strong>$2,310</strong></span><a href="#book" class="link">Book →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section section--alt" id="why">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Why AURA</span>
+      <h2 class="section__title">Considered in every detail.</h2>
+    </div>
+    <div class="grid grid--4">
+      <div class="feature reveal">
+        <div class="feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.8 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8z"/></svg>
+        </div>
+        <h3>Expert Planning</h3>
+        <p>Dedicated travel designers craft every itinerary by hand.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l4-4 4 4 4-4 6 6"/><path d="M3 18h18"/></svg>
+        </div>
+        <h3>Best Price Guarantee</h3>
+        <p>Premier rates and exclusive perks at the world's finest hotels.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <h3>24/7 Concierge</h3>
+        <p>Real humans, anywhere on earth, in any time zone.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+        </div>
+        <h3>Personalized Itineraries</h3>
+        <p>Every journey shaped around your pace, palate and curiosity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section" id="featured">
+  <div class="container">
+    <div class="featured reveal">
+      <div class="featured__media" style="background-image:url('./img/featured.jpg')">
+        <span class="badge">Featured Journey</span>
+      </div>
+      <div class="featured__body">
+        <span class="eyebrow">Iceland · Aurora Edition</span>
+        <h2>Glass Igloos &amp; Northern Lights</h2>
+        <p>Seven nights chasing the aurora through Iceland's volcanic interior — glacier hikes, geothermal lagoons, and nights beneath a sky on fire.</p>
+        <ul class="itinerary">
+          <li><span>Day 1–2</span> Reykjavík arrival · private city tour</li>
+          <li><span>Day 3–4</span> Golden Circle &amp; Silfra snorkel</li>
+          <li><span>Day 5–6</span> Glass igloo stay · aurora viewing</li>
+          <li><span>Day 7</span> Blue Lagoon farewell</li>
+        </ul>
+        <div class="featured__meta">
+          <div><span>Duration</span><strong>7 Nights</strong></div>
+          <div><span>From</span><strong>$5,490</strong></div>
+          <div><span>Group</span><strong>Up to 8</strong></div>
+        </div>
+        <a href="#book" class="btn btn--primary">Book This Journey</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section--alt" id="testimonials">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Stories</span>
+      <h2 class="section__title">Words from our travelers.</h2>
+    </div>
+
+    <div class="slider" id="slider">
+      <div class="slider__track" id="sliderTrack">
+        <article class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"AURA designed our honeymoon in Bali down to the last orchid on the pillow. Every detail — flawless."</p>
+          <footer><strong>Amelia &amp; Jonas</strong><span>London, UK</span></footer>
+        </article>
+        <article class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"The Patagonia expedition was the most extraordinary week of our lives. We're already planning the next one."</p>
+          <footer><strong>Marco Rivera</strong><span>Madrid, Spain</span></footer>
+        </article>
+        <article class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"From the welcome car to the farewell dinner in Kyoto, AURA made us feel like the only travelers in Japan."</p>
+          <footer><strong>Priya Kapoor</strong><span>Mumbai, India</span></footer>
+        </article>
+        <article class="slide">
+          <div class="stars">★★★★★</div>
+          <p>"The concierge answered at 3am when our flight was diverted. Within an hour we had a new villa, fully stocked."</p>
+          <footer><strong>Henry Ashford</strong><span>New York, USA</span></footer>
+        </article>
+      </div>
+      <div class="slider__nav">
+        <button class="slider__btn" id="prevSlide" aria-label="Previous">‹</button>
+        <div class="slider__dots" id="sliderDots"></div>
+        <button class="slider__btn" id="nextSlide" aria-label="Next">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2 class="section__title">Moments from the journey.</h2>
+    </div>
+    <div class="gallery">
+      <div class="gallery__item gallery__item--tall reveal" style="background-image:url('./img/g1.jpg')"></div>
+      <div class="gallery__item reveal" style="background-image:url('./img/g2.jpg')"></div>
+      <div class="gallery__item reveal" style="background-image:url('./img/g3.jpg')"></div>
+      <div class="gallery__item gallery__item--wide reveal" style="background-image:url('./img/g4.jpg')"></div>
+      <div class="gallery__item gallery__item--tall reveal" style="background-image:url('./img/g5.jpg')"></div>
+      <div class="gallery__item reveal" style="background-image:url('./img/g6.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section__title">Everything you need to know.</h2>
+    </div>
+    <div class="faq" id="faq-list">
+      <details class="faq__item reveal"><summary>How does the booking process work?<span class="faq__icon"></span></summary><div class="faq__a">Share your dream trip with us and a dedicated designer will craft a proposal within 48 hours, refined until it's perfect.</div></details>
+      <details class="faq__item reveal"><summary>Can itineraries be customized?<span class="faq__icon"></span></summary><div class="faq__a">Every AURA journey is built from scratch around you — pace, taste, budget and the experiences that matter most.</div></details>
+      <details class="faq__item reveal"><summary>What is included in the price?<span class="faq__icon"></span></summary><div class="faq__a">Accommodations, private transfers, curated experiences, expert guides and 24/7 concierge support throughout your trip.</div></details>
+      <details class="faq__item reveal"><summary>Do you offer travel insurance?<span class="faq__icon"></span></summary><div class="faq__a">Yes — we partner with leading insurers to offer comprehensive cover tailored to your itinerary.</div></details>
+      <details class="faq__item reveal"><summary>What is your cancellation policy?<span class="faq__icon"></span></summary><div class="faq__a">Flexible policies vary by destination and supplier — your designer will outline everything clearly upfront.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="book">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <span class="eyebrow">Book</span>
+      <h2 class="section__title">Begin your journey.</h2>
+      <p class="section__lead">Tell us about your dream trip — we'll respond within 24 hours.</p>
+    </div>
+
+    <form class="form reveal" id="bookForm" novalidate>
+      <div class="form__row">
+        <label class="field"><span>Full name</span><input name="name" type="text" required minlength="2" /><em class="err"></em></label>
+        <label class="field"><span>Email</span><input name="email" type="email" required /><em class="err"></em></label>
+      </div>
+      <div class="form__row">
+        <label class="field"><span>Destination</span>
+          <select name="destination" required>
+            <option value="">Choose…</option>
+            <option>Santorini</option><option>Swiss Alps</option><option>Tokyo</option>
+            <option>Bali</option><option>Patagonia</option><option>Paris</option><option>Iceland</option>
+          </select><em class="err"></em>
+        </label>
+        <label class="field"><span>Travel date</span><input name="date" type="date" required /><em class="err"></em></label>
+      </div>
+      <div class="form__row">
+        <label class="field"><span>Travelers</span><input name="travelers" type="number" min="1" max="20" value="2" required /><em class="err"></em></label>
+        <label class="field"><span>Budget (USD)</span>
+          <select name="budget">
+            <option>$2,000 – $5,000</option><option>$5,000 – $10,000</option>
+            <option>$10,000 – $25,000</option><option>$25,000+</option>
+          </select>
+        </label>
+      </div>
+      <label class="field"><span>Tell us about your trip</span><textarea name="message" rows="4" placeholder="Special occasions, must-haves, dietary needs…"></textarea></label>
+      <button type="submit" class="btn btn--primary btn--block">Request Itinerary</button>
+      <p class="form__success" id="formSuccess">Thank you — your request is in. We'll be in touch within 24 hours.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#home" class="brand brand--light">
+        <span class="brand__mark">A</span>
+        <span class="brand__name">AURA<small>travels</small></span>
+      </a>
+      <p class="footer__about">Curated luxury journeys, designed in detail, lived in full.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#destinations">Destinations</a></li><li><a href="#featured">Packages</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#testimonials">Stories</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li>hello@auratravels.co</li><li>+1 (800) 555-0199</li><li>14 Holland Park, London</li></ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Pinterest">Pinterest</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">© <span id="year"></span> AURA Travels. All journeys reserved.</div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
